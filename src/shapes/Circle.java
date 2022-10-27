@@ -20,7 +20,8 @@ public class Circle {
 	}
 	
 	private double findArea() {
-		return 0;
+		double a = Math.PI *Math.pow(radius, 2);
+		return a;
 	}
 	
 	public void printStats() {
