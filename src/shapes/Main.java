@@ -52,6 +52,9 @@ public class Main {
 		
 		if (shape == 3) {
 			
+			System.out.println();
+			c.printStats();
+			
 		}
 		
 		System.out.println();
@@ -96,32 +99,17 @@ public class Main {
 		System.out.println();
 		System.out.println("Would you like to go back to the menu?");
 		System.out.println("1. Yes 2. No");
-		
-		int yesno = in.nextInt();
-		
-		if (yesno == 1) {
-		System.out.println();
-		menu = true;
-		
-		}
-		else if (yesno == 2) {
-			
-			System.out.println();
-			System.out.println ("Quitting program...");
-			in.close();
-			
-		}
 
 		}
 		
 		if (shape==2) {
 			
 			
-			System.out.println("Choose a length for side A of your triangle.");
+			System.out.println("Choose a length for side A (height) of your triangle.");
 			
 			t.setSideA(in.nextInt());
 			
-			System.out.println("Choose a length for side B of your triangle.");
+			System.out.println("Choose a length for side B (base) of your triangle.");
 			
 			t.setSideB(in.nextInt());
 			
@@ -132,14 +120,21 @@ public class Main {
 			System.out.println();
 			System.out.println("Would you like to go back to the menu?");
 			System.out.println("1. Yes 2. No");
+		
+		}
+		
 			
-			if (shape==3) {
+		if (shape==3) {
 				
-				System.out.println("Choose a radius for your circle.");
+			System.out.println("Choose a radius for your circle.");
 				
-				c.setRadius(in.nextInt());
+			c.setRadius(in.nextInt());
 			
-			}
+			System.out.println();
+			System.out.println("Would you like to go back to the menu?");
+			System.out.println("1. Yes 2. No");
+			
+		}
 			
 			int yesno = in.nextInt();
 			
@@ -157,8 +152,6 @@ public class Main {
 			}
 			
 			
-			
-		}
 		
 		}
 		
@@ -195,8 +188,8 @@ public class Main {
 			}
 			
 			if (shape==2) {
-				System.out.println("Side A of your triangle is: " + t.getSideA());
-				System.out.println("Side B of your triangle is: " + t.getSideB());
+				System.out.println("Side A (height) of your triangle is: " + t.getSideA());
+				System.out.println("Side B (base) of your triangle is: " + t.getSideB());
 				System.out.println("Side C of your triangle is: " + t.getSideC());
 				
 				System.out.println();
